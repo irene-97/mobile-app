@@ -1,4 +1,45 @@
-$sprites: ();
+$sprites: (
+	"download": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 37,
+			height: 35,
+			image: "sprites.png",
+			total_width: 46,
+			total_height: 35,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 74,
+			height: 70,
+			image: "sprites@2x.png",
+			total_width: 92,
+			total_height: 70,
+		),
+	),
+	"list-type": (
+		normal: (
+			x: 39,
+			y: 0,
+			width: 7,
+			height: 12,
+			image: "sprites.png",
+			total_width: 46,
+			total_height: 35,
+		),
+		retina: (
+			x: 78,
+			y: 0,
+			width: 14,
+			height: 24,
+			image: "sprites@2x.png",
+			total_width: 92,
+			total_height: 70,
+		),
+	),
+);
 
 @each $name in map-keys($sprites) {
 	.sprite-#{$name} {

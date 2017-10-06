@@ -4,3 +4,33 @@ append vars
 	- html.classList.push('page-index')
 
 block content
+	header.header
+		.container
+			.header__wrapper
+				a.header__logo(href="#")
+					img(src="images/logo.png" alt="")
+				.header__menu
+					a.header__menu__item(href="#")
+						| Home
+					a.header__menu__item(href="#")
+						| Features
+					a.header__menu__item(href="#")
+						| Team
+					a.header__menu__item(href="#")
+						| Testimonials
+					a.header__menu__item(href="#")
+						| Contact
+			.header__title
+				| Introducing Mobileapp.
+			.header__subtitle
+				| Maecenas vitae tellus sapien. Praesent
+			.header__list
+				.header__list__item
+					| Semper scelerisque tristique a enim
+				.header__list__item
+					| Integer ut mattis nulla, eget vehicula elit
+				.header__list__item
+					| Praesent rutrum ac nunc et
+			a.header__button(href="#")
+				| Download
+			img.header__phones(src="images/phones.png" alt="")
