@@ -1,0 +1,66 @@
+.features {
+	margin-top: 56px;
+
+	&__text {
+		font-size: 18px;
+		line-height: 36px;
+		text-align: center;
+		color: $color-black;
+	}
+
+	&__columns {
+		display: flex;
+		margin-top: 75px;
+	}
+
+	&__column {
+		display: block;
+
+		&--left {
+			margin-top: 69px;
+			margin-left: 46px;
+		}
+
+		&--center {
+		}
+
+		&--right {
+			margin-top: 69px;
+			margin-left: 19px;
+		}
+	}
+
+	&__item {
+		@include clearfix;
+
+		margin-bottom: 99px;
+		width: 343px;
+
+		&__icon {
+			float: left;
+		}
+
+		&__title {
+			margin-left: 81px;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 18px;
+		}
+
+		&__text {
+			margin-top: 16px;
+			margin-left: 81px;
+			font-size: 13px;
+			line-height: 24px;
+		}
+	}
+
+	&__phone {
+		img {
+			display: block;
+			margin-left: 30px;
+			width: 418px;
+			height: 726px;
+		}
+	}
+}
