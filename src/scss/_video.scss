@@ -1,0 +1,77 @@
+.video {
+	margin-top: 50px;
+	height: 446px;
+	background: $color-picton-blue;
+
+	&__title {
+		padding-top: 70px;
+		padding-left: 42px;
+		width: 640px;
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 28px;
+		text-transform: uppercase;
+		color: $color-black;
+	}
+
+	&__description {
+		margin-top: 15px;
+		margin-left: 41px;
+		width: 550px;
+		font-size: 18px;
+		line-height: 26px;
+		color: $color-white;
+	}
+
+	&__systems {
+		margin-top: 22px;
+		margin-left: 41px;
+	}
+
+	&__system {
+		position: relative;
+		display: inline-block;
+		margin-right: 20px;
+		border-radius: 50%;
+		width: 68px;
+		height: 68px;
+		background: $color-pacific-blue;
+		transition: background 0.1s ease;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -55%);
+		}
+
+		&:hover {
+			background: $color-black;
+		}
+
+		&--apple {
+			&::before {
+				@include sprite("apple");
+			}
+		}
+
+		&--android {
+			&::before {
+				@include sprite("android");
+			}
+		}
+
+		&--windows {
+			&::before {
+				@include sprite("windows");
+			}
+		}
+	}
+
+	&__preview {
+		position: absolute;
+		top: 73px;
+		right: 64px;
+	}
+}
