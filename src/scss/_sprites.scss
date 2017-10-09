@@ -61,7 +61,7 @@ $sprites: (
 	),
 	"f-1": (
 		normal: (
-			x: 39,
+			x: 0,
 			y: 0,
 			width: 37,
 			height: 36,
@@ -70,7 +70,7 @@ $sprites: (
 			total_height: 112,
 		),
 		retina: (
-			x: 78,
+			x: 0,
 			y: 0,
 			width: 74,
 			height: 72,
@@ -101,7 +101,7 @@ $sprites: (
 	),
 	"f-3": (
 		normal: (
-			x: 0,
+			x: 39,
 			y: 0,
 			width: 37,
 			height: 36,
@@ -110,7 +110,7 @@ $sprites: (
 			total_height: 112,
 		),
 		retina: (
-			x: 0,
+			x: 78,
 			y: 0,
 			width: 74,
 			height: 72,
@@ -179,12 +179,32 @@ $sprites: (
 			total_height: 224,
 		),
 	),
-	"list-type": (
+	"facebook": (
+		normal: (
+			x: 116,
+			y: 59,
+			width: 21,
+			height: 19,
+			image: "sprites.png",
+			total_width: 143,
+			total_height: 112,
+		),
+		retina: (
+			x: 232,
+			y: 118,
+			width: 42,
+			height: 38,
+			image: "sprites@2x.png",
+			total_width: 286,
+			total_height: 224,
+		),
+	),
+	"google": (
 		normal: (
 			x: 116,
 			y: 35,
-			width: 7,
-			height: 12,
+			width: 23,
+			height: 22,
 			image: "sprites.png",
 			total_width: 143,
 			total_height: 112,
@@ -192,8 +212,48 @@ $sprites: (
 		retina: (
 			x: 232,
 			y: 70,
+			width: 46,
+			height: 44,
+			image: "sprites@2x.png",
+			total_width: 286,
+			total_height: 224,
+		),
+	),
+	"list-type": (
+		normal: (
+			x: 92,
+			y: 76,
+			width: 7,
+			height: 12,
+			image: "sprites.png",
+			total_width: 143,
+			total_height: 112,
+		),
+		retina: (
+			x: 184,
+			y: 152,
 			width: 14,
 			height: 24,
+			image: "sprites@2x.png",
+			total_width: 286,
+			total_height: 224,
+		),
+	),
+	"twitter": (
+		normal: (
+			x: 116,
+			y: 80,
+			width: 21,
+			height: 19,
+			image: "sprites.png",
+			total_width: 143,
+			total_height: 112,
+		),
+		retina: (
+			x: 232,
+			y: 160,
+			width: 42,
+			height: 38,
 			image: "sprites@2x.png",
 			total_width: 286,
 			total_height: 224,

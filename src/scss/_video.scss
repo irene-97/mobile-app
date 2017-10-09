@@ -1,4 +1,5 @@
 .video {
+	margin-bottom: 88px;
 	margin-top: 50px;
 	height: 446px;
 	background: $color-picton-blue;
@@ -71,7 +72,7 @@
 
 	&__preview {
 		position: absolute;
-		top: 73px;
 		right: 64px;
+		top: 73px;
 	}
 }
