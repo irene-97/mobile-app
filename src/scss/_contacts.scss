@@ -1,0 +1,168 @@
+.contacts {
+	padding-top: 62px;
+	height: 680px;
+	background: url("../images/contacts.jpg") center no-repeat;
+
+	.title {
+		color: $color-white;
+
+		&__text {
+			&::before {
+				content: "";
+				background: $color-white;
+			}
+
+			&::after {
+				content: "";
+				background: $color-white;
+			}
+		}
+
+		&__line {
+			filter: invert(1);
+		}
+	}
+
+	.container {
+		display: flex;
+	}
+
+	&__caption {
+		margin-top: 100px;
+		margin-left: 40px;
+		width: 440px;
+		font-size: 24px;
+		line-height: 21px;
+		color: $color-white;
+	}
+
+	&__text {
+		margin-top: 10px;
+		margin-left: 43px;
+		width: 440px;
+		font-size: 14px;
+		line-height: 21px;
+		color: $color-white;
+	}
+
+	&__links {
+		margin-top: 37px;
+		margin-left: 38px;
+		width: 250px;
+	}
+
+	&__link {
+		position: relative;
+		display: inline-block;
+		margin-right: 13px;
+		border-radius: 50%;
+		width: 42px;
+		height: 42px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&--facebook {
+			background: #3b5997;
+
+			&::before {
+				@include sprite("facebook");
+
+				content: "";
+			}
+		}
+
+		&--twitter {
+			background: #3ec2f3;
+
+			&::before {
+				@include sprite("twitter");
+
+				content: "";
+			}
+		}
+
+		&--google {
+			background: #e44c41;
+
+			&::before {
+				@include sprite("google");
+
+				content: "";
+			}
+		}
+	}
+
+	&__phone {
+		margin-top: 20px;
+		margin-left: 39px;
+		font-size: 14px;
+		line-height: 21px;
+		color: #bface2;
+	}
+
+	&__email {
+		margin-top: 3px;
+		margin-left: 39px;
+		font-size: 14px;
+		line-height: 21px;
+		color: #bface2;
+	}
+
+	&__form {
+		margin-top: 97px;
+		margin-bottom: 56px;
+		padding-left: 155px;
+
+		&__name,
+		&__email,
+		&__message {
+			margin-bottom: 31px;
+			outline: none;
+			border: none;
+			border-radius: 3px;
+			width: 270px;
+			height: 44px;
+		}
+
+		&__name,
+		&__email {
+			padding: 7px 21px;
+		}
+
+		&__name {
+			display: inline-block;
+			margin-right: 29px;
+		}
+
+		&__message {
+			padding: 21px 20px;
+			width: 570px;
+			height: 179px;
+			resize: none;
+		}
+
+		&__submit {
+			margin-left: 403px;
+			outline: none;
+			border: none;
+			border-radius: 4px;
+			padding: 0 42px;
+			height: 50px;
+			font-size: 22px;
+			line-height: 24px;
+			text-transform: uppercase;
+			color: $color-white;
+			background: $color-picton-blue;
+
+			&:hover {
+				background: darken($color-picton-blue, 10%);
+			}
+		}
+	}
+}
