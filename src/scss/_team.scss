@@ -12,6 +12,20 @@
 		margin-top: 101px;
 		padding: 0 33px;
 		font-size: 0;
+
+		@media (max-width: 1345px) {
+			text-align: center;
+		}
+
+		@media (max-width: 1130px) {
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 800px;
+		}
+
+		@media (max-width: 500px) {
+			padding: 0;
+		}
 	}
 
 	&__person {
@@ -19,7 +33,6 @@
 		display: inline-block;
 		margin-right: 31px;
 		width: 270px;
-		height: 300px;
 		text-decoration: none;
 
 		img {
@@ -52,6 +65,11 @@
 			background: rgba($color-java, 0.8);
 			opacity: 0;
 			transition: opacity 0.3s ease;
+
+			@media (max-width: 1345px) {
+				width: 220px;
+				height: 244px;
+			}
 		}
 
 		&__title {
@@ -70,11 +88,20 @@
 			line-height: 24px;
 			text-align: center;
 			color: $color-white;
+
+			@media (max-width: 1345px) {
+				font-size: 14px;
+				line-height: 19px;
+			}
 		}
 
 		&__links {
 			margin-top: 66px;
 			text-align: center;
+
+			@media (max-width: 1345px) {
+				margin-top: 4px;
+			}
 		}
 
 		&__link {
@@ -135,5 +162,21 @@
 		&:last-child {
 			margin-right: 0;
 		}
+
+		@media (max-width: 1345px) {
+			width: 220px;
+		}
+
+		@media (max-width: 1130px) {
+			margin: 15px;
+
+			&:last-child {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	@media (max-width: 1345px) {
+
 	}
 }
