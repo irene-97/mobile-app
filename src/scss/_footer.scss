@@ -5,6 +5,10 @@
 
 	.container {
 		display: flex;
+
+		@media (max-width: 780px) {
+			display: block;
+		}
 	}
 
 	&__copyright {
@@ -12,6 +16,16 @@
 		margin-left: 36px;
 		font-size: 14px;
 		line-height: 24px;
+
+		@media (max-width: 1080px) {
+			margin-top: 12px;
+		}
+
+		@media (max-width: 780px) {
+			margin-left: 0;
+			font-size: 11px;
+			line-height: 11px;
+		}
 	}
 
 	&__designed {
@@ -20,5 +34,22 @@
 		bottom: 0;
 		font-size: 14px;
 		line-height: 24px;
+
+		@media (max-width: 780px) {
+			position: static;
+		}
+
+		@media (max-width: 780px) {
+			font-size: 11px;
+			line-height: 18px;
+		}
+	}
+
+	@media (max-width: 1088px) {
+		margin-top: -46px;
+	}
+
+	@media (max-width: 780px) {
+		text-align: center;
 	}
 }
