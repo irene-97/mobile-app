@@ -11,6 +11,14 @@
 	&__columns {
 		display: flex;
 		margin-top: 75px;
+
+		@media (max-width: 1160px) {
+			justify-content: space-around;
+		}
+
+		@media (max-width: 580px) {
+			display: block;
+		}
 	}
 
 	&__column {
@@ -19,14 +27,35 @@
 		&--left {
 			margin-top: 69px;
 			margin-left: 46px;
+
+			@media (max-width: 1160px) {
+				margin-left: 0;
+			}
+
+			@media (max-width: 580px) {
+				margin: 0 auto;
+				width: 240px;
+			}
 		}
 
 		&--center {
+			@media (max-width: 1160px) {
+				display: none;
+			}
 		}
 
 		&--right {
 			margin-top: 69px;
 			margin-left: 19px;
+
+			@media (max-width: 1160px) {
+				margin-left: 0;
+			}
+
+			@media (max-width: 580px) {
+				margin: 0 auto;
+				width: 240px;
+			}
 		}
 	}
 
@@ -45,6 +74,10 @@
 			font-weight: bold;
 			font-size: 18px;
 			line-height: 18px;
+
+			@media (max-width: 1290px) {
+				margin-left: 52px;
+			}
 		}
 
 		&__text {
@@ -52,6 +85,14 @@
 			margin-left: 81px;
 			font-size: 13px;
 			line-height: 24px;
+
+			@media (max-width: 1290px) {
+				margin-left: 52px;
+			}
+		}
+
+		@media (max-width: 840px) {
+			width: 240px;
 		}
 	}
 
@@ -61,6 +102,17 @@
 			margin-left: 30px;
 			width: 418px;
 			height: 726px;
+			object-fit: cover;
+
+			@media (max-width: 1290px) {
+				margin: 0 auto;
+				width: 310px;
+				height: auto;
+			}
+		}
+
+		@media (max-width: 1290px) {
+			margin-left: 20px;
 		}
 	}
 }
