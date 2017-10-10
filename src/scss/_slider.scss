@@ -48,6 +48,32 @@
 				position: absolute;
 				left: -42px;
 				top: -16px;
+
+				@media (max-width: 550px) {
+					left: -3px;
+					top: -48px;
+				}
+			}
+
+			@media (max-width: 1150px) {
+				width: 675px;
+			}
+
+			@media (max-width: 930px) {
+				width: 530px;
+			}
+
+			@media (max-width: 730px) {
+				width: 391px;
+			}
+
+			@media (max-width: 630px) {
+				width: 330px;
+			}
+
+			@media (max-width: 550px) {
+				width: 232px;
+				font-size: 17px;
 			}
 		}
 	}
