@@ -1,5 +1,6 @@
 .idea/
 node_modules/
+build/
 zip/
 aero-debug.log
 aero-deploy.tar.gz
