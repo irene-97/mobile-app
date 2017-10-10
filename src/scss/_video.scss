@@ -1,6 +1,6 @@
 .video {
-	margin-bottom: 88px;
 	margin-top: 50px;
+	margin-bottom: 88px;
 	height: 446px;
 	background: $color-picton-blue;
 
@@ -13,6 +13,17 @@
 		line-height: 28px;
 		text-transform: uppercase;
 		color: $color-black;
+
+		@media (max-width: 1200px) {
+			width: 390px;
+		}
+
+		@media (max-width: 920px) {
+			margin: 0 auto 14px;
+			padding-left: 0;
+			width: 250px;
+			text-align: center;
+		}
 	}
 
 	&__description {
@@ -22,11 +33,32 @@
 		font-size: 18px;
 		line-height: 26px;
 		color: $color-white;
+
+		@media (max-width: 1200px) {
+			width: 390px;
+		}
+
+		@media (max-width: 920px) {
+			margin: 0 auto 18px;
+		}
+
+		@media (max-width: 490px) {
+			width: 250px;
+		}
 	}
 
 	&__systems {
 		margin-top: 22px;
 		margin-left: 41px;
+
+		@media (max-width: 1200px) {
+			width: 266px;
+		}
+
+		@media (max-width: 920px) {
+			margin: 0 auto;
+			width: 250px;
+		}
 	}
 
 	&__system {
@@ -49,6 +81,10 @@
 
 		&:hover {
 			background: $color-black;
+		}
+
+		&:last-child {
+			margin-right: 0;
 		}
 
 		&--apple {
@@ -74,5 +110,30 @@
 		position: absolute;
 		right: 64px;
 		top: 73px;
+
+		@media (max-width: 1200px) {
+			img {
+				width: 385px;
+			}
+		}
+
+		@media (max-width: 920px) {
+			position: static;
+			margin: 42px auto 0;
+			width: 385px;
+		}
+
+		@media (max-width: 490px) {
+			width: 250px;
+
+			img {
+				width: 250px;
+			}
+		}
+	}
+
+	@media (max-width: 920px) {
+		padding-bottom: 42px;
+		height: auto;
 	}
 }
